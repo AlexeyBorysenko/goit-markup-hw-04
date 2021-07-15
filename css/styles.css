@@ -140,7 +140,7 @@ body {
   background-image: url('../imeges/bg/bg.jpg');
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  max-width: 1600;
+  background-size: cover;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -219,6 +219,16 @@ body {
   letter-spacing: 0.03em;
   color: #212121;
 }
+.advantages-icon {
+  width: 70px;
+  height: 70px;
+}
+.advantages-icon-container {
+  width: 100%;
+  background: #f5f4fa;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+}
 /* job  */
 .section-job {
   padding-bottom: 94px;
@@ -231,7 +241,8 @@ body {
   display: flex;
 }
 .job,
-.team-titel {
+.team-titel,
+.partners {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -245,6 +256,7 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
   background: var(--bacground-button);
+  margin-bottom: 94px;
 }
 .team-list {
   display: flex;
@@ -292,6 +304,9 @@ body {
   width: 20px;
   height: 20px;
 }
+.social-list-icon:hover {
+  fill: white;
+}
 .social-list-link {
   display: flex;
   justify-content: center;
@@ -311,6 +326,34 @@ body {
   justify-content: space-between;
   margin-top: 16px;
 }
+/* Partners */
+.partners-sections {
+  margin-bottom: 94px;
+}
+.partners-list {
+  display: flex;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.partners-list-icon {
+  width: 106px;
+  height: 60px;
+}
+.partners-list-item {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 16px 32px;
+}
+.partners-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+.partners-list-link {
+  width: 106px;
+  height: 60px;
+}
+
 /* footer */
 .address {
   font-style: normal;
@@ -323,12 +366,17 @@ body {
   margin-bottom: 9px;
 }
 .footer-list-address {
+  display: flex;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
 }
+.footer-social-list {
+  display: flex;
+}
+
 .footer .logo {
   margin-bottom: 20px;
   display: block;
