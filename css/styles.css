@@ -70,6 +70,11 @@ body {
   height: 12px;
   margin-right: 10px;
 }
+.header-icon-tel {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
@@ -112,6 +117,8 @@ body {
   letter-spacing: 0.02em;
   color: var(--contact-head);
   margin-left: auto;
+  display: flex;
+  align-items: center;
 }
 .contacts-header-phone-link {
   font-weight: 500;
@@ -120,6 +127,8 @@ body {
   letter-spacing: 0.02em;
   color: var(--contact-head);
   margin-left: 50px;
+  display: flex;
+  align-items: center;
 }
 .contacts-header-mail-link:hover,
 .contacts-header-mail-link:focus {
@@ -170,18 +179,16 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
-  background: var(--bacground-button);
+  background: var(--accent-color);
   padding: 10px 32px;
   margin-right: auto;
   margin-left: auto;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-}
-.modal-button:hover,
-.modal-button:focus {
+  border-color: transparent;
   color: var(--titel-hero-button);
-  background: var(--accent-color);
 }
+
 /* advantages */
 .advantages {
   display: flex;
@@ -243,6 +250,7 @@ body {
   background: #f5f4fa;
   padding: 25px 100px;
   margin-bottom: 30px;
+  border-radius: 4px;
 }
 /* job  */
 .section-job {
@@ -271,7 +279,6 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
   background: var(--bacground-button);
-  margin-bottom: 94px;
 }
 .team-list {
   display: flex;
@@ -344,7 +351,8 @@ body {
 }
 /* Partners */
 .partners-sections {
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .partners-list {
   display: flex;
@@ -353,6 +361,7 @@ body {
   fill: var(--fill);
 }
 .partners-list-item {
+  display: block;
   width: 170px;
   height: 92px;
   box-sizing: border-box;
@@ -360,6 +369,7 @@ body {
 .partners-list-link:hover,
 .partners-list-link:focus {
   border: 1px solid #2196f3;
+  fill: var(--accent-color);
 }
 .partners-list-icon:hover,
 .partners-list-icon:focus {
@@ -388,6 +398,7 @@ body {
 }
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 .footer {
   background: var(--background-color);
